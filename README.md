@@ -1,5 +1,5 @@
 # Kubernetes
-<img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.png" width=700 height="400"/>
+<img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-ar21.png" width=700 height="350"/>
 
 - Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
 
