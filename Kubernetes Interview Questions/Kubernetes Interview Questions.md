@@ -25,7 +25,7 @@
 - Kubelet is a service in the Kubernetes cluster that runs on each node. It communicates with the master component and ensures that the containers described in pods are running and healthy.
 #### 9. What is etcd in Kubernetes?
 
-- etcd is a key-value store that is used as the backend for the Kubernetes cluster management. It stores all of the cluster data, such as the current state of the objects and the desired state specified by the administrators.
+- Etcd is a key-value store that is used as the backend for the Kubernetes cluster management. It stores all of the cluster data, such as the current state of the objects and the desired state specified by the administrators.
 #### 10. What is a label in Kubernetes?
 
 - A label is a key-value pair attached to objects, such as pods, in Kubernetes. Labels are used to organize and select subsets of objects, such as to identify which pods belong to a particular application.
@@ -55,6 +55,12 @@
 - A Deployment is a higher-level object that provides declarative updates for pods and ReplicaSets. It ensures that a specified number of replicas are running at all times and automatically replaces any failed pods. A StatefulSet is a lower-level object that provides guaranteed ordering and uniqueness for pods. It is used for stateful applications, such as databases, where the pods require stable network identities and persistent storage.
 #### 19. Can you explain the role of admission controllers in Kubernetes?
 
-- Admission controllers are plug-ins for the Kubernetes API server that are executed before persisting objects in etcd. They are used
+- Admission controllers are plug-ins for the Kubernetes API server that are executed before persisting objects in etcd. They are used to validate and mutate incoming API requests, such as creating or updating a pod. This allows you to enforce custom policies and constraints on the API requests, such as ensuring that pods have specific labels or annotations, or limiting the resources that pods can consume. Admission controllers can be used to implement various security and compliance policies, such as admission whitelisting, admission webhooks, and namespace quotas
+#### 20. How does Kubernetes handle resource utilization and resource management for containers and pods?
 
+- Kubernetes provides resource management and utilization features, such as resource quotas, limits, and requests, to ensure that pods and containers are scheduled and executed efficiently on the nodes in the cluster. You can specify the resources, such as CPU and memory, that your pods need to run, and Kubernetes will ensure that the pods are scheduled on nodes that have the necessary resources available. This allows you to prevent over-utilization of resources and ensure that the critical pods are prioritized.
+
+#### 21. Can you explain the role of liveness and readiness probes in Kubernetes?
+
+Liveness probes are used to check the health of a running container and determine if it should be restarted. For example, you can use a liveness probe to check if a database connection is still open. If the probe fails, Kubernetes will restart the container to recover from a potential failure.
 
