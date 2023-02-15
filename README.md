@@ -5,4 +5,4 @@
 
 - It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of experience of running production workloads at Google, combined with best-of-breed ideas and practices from the community
 ### Kubernetes Interview Questions
-- <a href="https://github.com/houcemeddinechouket/docker/blob/main/Docker%20Exercises/Warm%20up.md"> Interview Questions</a>
+- <a href="https://github.com/houcemeddinechouket/Kubernetes/blob/main/Kubernetes%20Interview%20Questions/Kubernetes%20Interview%20Questions.md"> Interview Questions</a>
